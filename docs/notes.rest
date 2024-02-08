@@ -1,0 +1,21 @@
+###LISTAS NOTAS
+GET http://127.0.0.1:4000/api/notas
+Accept: application/json
+Content-Type: application/json
+
+###POST NOTAS
+POST http://127.0.0.1:4000/api/notas
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title":"title 2",
+    "content":"content 2",
+    "date":"2022-05-01", 
+    "author":"author 2"
+}
+
+###VER NOTA
+GET http://127.0.0.1:4000/api/notas/1
+Accept: application/json
+Content-Type: application/json

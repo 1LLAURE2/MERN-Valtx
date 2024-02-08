@@ -11,5 +11,6 @@ com/en/starter/installing.html)
 > [!NOTE]
 > --y : Se usa para omitir un cuestionario.
 # *Ejecución del Proyecto*
-    node src/index.js
+    node src/index.js (Deprecado)
+    npm run dev
 ###

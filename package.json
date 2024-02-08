@@ -4,7 +4,8 @@
   "description": "- npm init --y [Inicializar Packege.json](docs/CONTRIBUTING.md)\r - npm i express --save [Documentacion express](https://expressjs.\r com/en/starter/installing.html)\r - npm i cors [Documentacion Cors](https://www.npmjs.com/package/cors)\r - npm i moongoose[Documentacion Moongose](https://www.npmjs.com/package/mongoose)\r - npm i dotenv [Documentacion Dotenv](https://www.npmjs.com/package/dotenv)\r - npm i nodemon [Documentacion Nodemon](https://www.npmjs.com/package/nodemon)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon src/index.js"
   },
   "keywords": [],
   "author": "JOSE LLAURE LLAPO",
