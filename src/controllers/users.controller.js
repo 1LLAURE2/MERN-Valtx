@@ -1,6 +1,21 @@
 const userCtrl={};
-userCtrl.getUsers=(req,res)=>res.json({message:'GET usuarios'})
-userCtrl.createUser=(req,res)=>res.json({message:'POST usuarios'})
-userCtrl.deleteUser=(req,res)=>res.json({message:'DELETE usuarios'})
+
+const User=require('../models/User');
+
+userCtrl.getUsers= async(req,res)=>{
+    const users=await User.find();
+    res.json(users);
+}
+
+userCtrl.createUser=async (req,res)=>{
+    const {username}=req.body;
+    const newUser=new User({username});
+    await newUser.save();
+    res.json('Usuario creado');
+}
+userCtrl.deleteUser=async (req,res)=>{
+    await User.findByIdAndDelete(req.params.id)
+    res.json({message:'DELETE usuarios'})
+}
 
 module.exports=userCtrl;

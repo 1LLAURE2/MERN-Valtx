@@ -9,13 +9,30 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "title":"title 2",
-    "content":"content 2",
+    "title":"title 3",
+    "content":"content 3",
     "date":"2022-05-01", 
-    "author":"author 2"
+    "author":"author 3"
 }
 
 ###VER NOTA
-GET http://127.0.0.1:4000/api/notas/1
+GET http://127.0.0.1:4000/api/notas/65c4305346fbe7f1489d1e16
+Accept: application/json
+Content-Type: application/json
+
+###UPDATE NOTA
+PUT http://127.0.0.1:4000/api/notas/65c4303d46fbe7f1489d1e12
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title":"title actualizado",
+    "content":"content actua",
+    "date":"2022-05-05", 
+    "author":"author actual"
+}
+
+###ELIMINAR NOTA
+DELETE http://127.0.0.1:4000/api/notas/65c4304446fbe7f1489d1e14
 Accept: application/json
 Content-Type: application/json
