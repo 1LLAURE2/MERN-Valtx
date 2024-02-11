@@ -21,15 +21,15 @@ Accept: application/json
 Content-Type: application/json
 
 ###UPDATE NOTA
-PUT http://127.0.0.1:4000/api/notas/65c4303d46fbe7f1489d1e12
+PUT http://127.0.0.1:4000/api/notas/65c683fa1dfe0471ff33ea12
 Accept: application/json
 Content-Type: application/json
 
 {
     "title":"title actualizado",
     "content":"content actua",
-    "date":"2022-05-05", 
-    "author":"author actual"
+    "date":"2024-02-10", 
+    "author":"raul"
 }
 
 ###ELIMINAR NOTA

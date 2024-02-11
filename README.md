@@ -12,4 +12,5 @@
 # *Ejecución del Proyecto*
     node src/index.js (Deprecado)
     npm run dev
-###
+# Fronted
+- [Ejercicio en React](https://github.com/1LLAURE2/MERN-Valtx-Frontend)
